@@ -72,4 +72,28 @@ let movements = [[0, 0], [0, 5], [-1, -3], [-3, 1], [2, -4], [3, 2]];
         console.log(steps);
     steps = movements.forEach(step => {
         console.log(step);
-    })
+    });
+
+
+
+let string = 'noggin oreo the moon time tele steed his tent apollo her lives though shoo tofu budapest';
+let array = string.split(' ');
+console.log(array);
+let callback = array.reduce((a,b) => {
+    if (b.length === 3){
+    return a + ' ';
+}
+else {
+    return a + b[b.length-1].toUpperCase();
+}
+}, '');
+console.log(callback);
+
+// function callback(a,b){   
+//     if (a.length === 3){
+//         b = ' ';
+//     }
+//     else {
+//         b = b;
+//     }
+// }
